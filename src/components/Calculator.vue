@@ -25,7 +25,7 @@
 
 <script>
 export default {
-  name: "HelloWorld",
+  name: "Calculator",
   data() {
     return {
       previous: null,
@@ -83,7 +83,7 @@ export default {
       this.current = `${this.operator(
         parseFloat(this.current),
         parseFloat(this.previous)
-      )}`;
+      )}` ;
       this.previous = null;
       this.operatorClicked = true;
     }
