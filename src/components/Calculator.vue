@@ -36,7 +36,7 @@ export default {
   },
   methods: {
     clear() {
-      this.current = "";
+      this.current = '';
     },
     sign() {
       this.current =
@@ -106,7 +106,7 @@ export default {
   color: #fff;
   grid-column: 1/5;
   height: 100px;
- padding-top: 50px;
+  padding-top: 50px;
   text-align: center;
 }
 .zero {
@@ -118,7 +118,7 @@ export default {
   cursor: pointer;
 }
 .operator {
-  background: orange;
+  background: rgb(245, 162, 9);
   color: #fff;
 }
 </style>
