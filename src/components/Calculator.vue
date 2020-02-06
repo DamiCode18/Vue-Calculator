@@ -83,7 +83,7 @@ export default {
       this.current = `${this.operator(
         parseFloat(this.current),
         parseFloat(this.previous)
-      )}` ;
+      )}`;
       this.previous = null;
       this.operatorClicked = true;
     }
@@ -105,6 +105,9 @@ export default {
   background: #333;
   color: #fff;
   grid-column: 1/5;
+  height: 100px;
+ padding-top: 50px;
+  text-align: center;
 }
 .zero {
   grid-column: 1 / 3;
