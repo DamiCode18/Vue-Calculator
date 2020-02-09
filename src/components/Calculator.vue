@@ -46,6 +46,9 @@ export default {
     },
     percent() {
       this.current = `${parseFloat(this.current) / 100}`;
+      if (this.current == "NaN") {
+        this.current = "";
+      }
     },
     append(number) {
       if (this.operatorClicked) {
@@ -86,6 +89,9 @@ export default {
       )}`;
       this.previous = null;
       this.operatorClicked = true;
+      if (this.current == "NaN") {
+        this.current = "";
+      }
     }
   }
 };
