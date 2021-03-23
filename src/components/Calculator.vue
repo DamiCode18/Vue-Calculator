@@ -1,6 +1,6 @@
 <template>
   <div class="calculator">
-    <div class="display">{{current || 0}}</div>
+    <div class="display">{{ current || 0 }}</div>
     <div @click="clear" class="btn">C</div>
     <div @click="sign" class="btn">+/-</div>
     <div @click="percent" class="btn">%</div>
@@ -25,13 +25,12 @@
 
 <script>
 export default {
-  name: "Calculator",
   data() {
     return {
       previous: null,
       current: "",
       operator: null,
-      operatorClicked: false
+      operatorClicked: false,
     };
   },
   methods: {
@@ -92,8 +91,8 @@ export default {
       if (this.current == "NaN") {
         this.current = "";
       }
-    }
-  }
+    },
+  },
 };
 </script>
 
